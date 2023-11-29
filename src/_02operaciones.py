@@ -1,31 +1,34 @@
 # Ejercicio 1: Sumar dos números
 def sumar(a, b):
-    pass
+    return a + b
 
 # Ejercicio 2: Restar dos números
 def restar(a, b):
-    pass
+    return a - b
 
 # Ejercicio 3: Multiplicar dos números
 def multiplicar(a, b):
-    pass
+    return a * b
 
 # Ejercicio 4: Dividir dos números
 def dividir(a, b):
-    pass
+    if b == 0:
+        return "Error: División por cero."
+    else:
+        return a / b
 
 # Ejercicio 5: Concatenar dos cadenas de texto
 def concatenar(cadena1, cadena2):
-    pass
+    return cadena1 + cadena2
 
 # Ejercicio 6: Calcular la longitud de una cadena de texto
 def longitud(cadena):
-    pass
-
+    return len(cadena)
+    
 # Ejercicio 7: Convertir una cadena de texto a mayúsculas
 def a_mayusculas(cadena):
-    pass
+    return cadena.upper()
 
 # Ejercicio 8: Convertir una cadena de texto a minúsculas
 def a_minusculas(cadena):
-    pass
+    return cadena.lower()
