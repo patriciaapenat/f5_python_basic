@@ -28,7 +28,8 @@ python3 -m venv env
 
 # Activar el entorno virtual
 source env/bin/activate  # En macOS/Linux
-.\env\Scripts\Activate   # En Windows
+.\env\Scripts\Activate   # En Windows con PowerShell
+./env/Scripts/Activate   # En Windows con Git Bash
 
 # Instalar las dependencias
 pip install -r requirements.txt
