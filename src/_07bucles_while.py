@@ -1,22 +1,20 @@
-# bucles_while.py
-
 def encontrar_primer_negativo(lista_numeros):
-    """
-    Devuelve el primer número negativo en la lista.
-    Si no hay negativos, devuelve None.
-    """
-    pass
+    for numero in lista_numeros:
+        if numero < 0:
+            return numero
+    return None
 
 def cuenta_regresiva(n):
-    """
-    Crea una cuenta regresiva desde n hasta 0.
-    Devuelve una lista con la cuenta regresiva.
-    """
-    pass
+    cuenta_regresiva_lista = []
+    while n >= 0:
+        cuenta_regresiva_lista.append(n)
+        n -= 1
+    return cuenta_regresiva_lista
 
 def sumar_hasta_limite(limite):
-    """
-    Suma números consecutivos desde 0 y devuelve la suma total
-    justo antes de que esta suma sobrepase el límite.
-    """
-    pass
+    suma_total = 0
+    contador = 0
+    while suma_total + contador <= limite:
+        suma_total += contador
+        contador += 1
+    return suma_total
